@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants"
+    tools:context=".main.TelaPrincipalActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/addItem"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Add" />
+
+        <Button
+            android:id="@+id/editarItem"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Edit" />
+        <Button
+            android:id="@+id/deletarItem"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Del" />
+        <Button
+            android:id="@+id/procurarItem"
+            android:layout_weight="0.5"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:text="Map"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:textAppearance="?attr/textAppearanceHeadline6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lista de Livros">
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ListView
+            android:id="@+id/listLivros"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</LinearLayout>

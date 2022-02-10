@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    tools:context=".main.LoginActivity"
+    >
+
+    <ImageView
+        android:id="@+id/imageViewUSer"
+        android:layout_width="187dp"
+        android:layout_height="199dp"
+        android:layout_marginTop="24dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_brand"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewUSer"
+        android:id="@+id/loginEmailAddress"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:layout_marginTop="16dp"
+        android:hint="Senha"
+        android:id="@+id/loginPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginEmailAddress"/>
+
+    <Button
+        android:layout_marginTop="24dp"
+        android:id="@+id/buttonLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fazer Login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/loginPassword"/>
+
+    <TextView
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonLogin"
+        android:id="@+id/cadastrarUsertextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuário novo? Clique aqui"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="561dp" />
+
+    <ProgressBar
+        android:visibility="invisible"
+        android:layout_marginTop="24dp"
+        android:id="@+id/progressBar2"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastrarUsertextView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

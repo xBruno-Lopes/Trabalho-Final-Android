@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "657829605420",
+    "project_id": "crud-lista-de-livros",
+    "storage_bucket": "crud-lista-de-livros.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:657829605420:android:e6c24b5bfc3e87e4462189",
+        "android_client_info": {
+          "package_name": "com.brunolopes.trabalhofinal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "657829605420-ft5a8l8c4atb36f1ns0g7va3upg5esj1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.brunolopes.trabalhofinal",
+            "certificate_hash": "fda873c244ac09a331d65eced943035e427024d4"
+          }
+        },
+        {
+          "client_id": "657829605420-j7gdirot1f11k7onjgt41m8f63pcnfv0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYyfc0RDSwWS1-UL3r6lzHyoiK9igZWj8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "657829605420-j7gdirot1f11k7onjgt41m8f63pcnfv0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

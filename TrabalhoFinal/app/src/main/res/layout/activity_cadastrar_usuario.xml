@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingRight="16dp"
+    android:paddingLeft="16dp"
+    tools:context=".main.CadastrarUsuarioActivity"
+    >
+
+    <TextView
+        android:id="@+id/registerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar Usuário"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:layout_marginTop="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registerText"
+        android:id="@+id/cadastrarFullName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nome Completo"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cadastrarFullName"
+        android:id="@+id/cadastrarEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:layout_marginTop="16dp"
+        android:hint="Senha"
+        android:id="@+id/cadastrarPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cadastrarEmail"/>
+
+    <EditText
+        android:layout_marginTop="16dp"
+        android:hint="Telefone"
+        android:id="@+id/cadastrarPhone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:inputType="textPhonetic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cadastrarPassword"/>
+    <Button
+        android:layout_marginTop="64dp"
+        android:id="@+id/cadastrarButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cadastrarPhone"/>
+
+    <TextView
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cadastrarButton"
+        android:id="@+id/cadastrarLoginText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Já possui login? Clique aqui"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="561dp" />
+
+    <ProgressBar
+        android:layout_marginTop="24dp"
+        android:visibility="invisible"
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cadastrarLoginText" />
+</androidx.constraintlayout.widget.ConstraintLayout>
